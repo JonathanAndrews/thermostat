@@ -49,7 +49,7 @@ describe("Thermostat", function() {
       expect(thermostat.getCurrentTemperature()).toEqual(10);
     });
     it('to minimum of 10 and throw error', function() {
-      expect(function() { thermostat.down(15); } ).toThrow(new Error('Temp too low'));
+      expect(function() {thermostat.down(15);}).toThrow(new Error('Temp too low'));
     });
   });
 

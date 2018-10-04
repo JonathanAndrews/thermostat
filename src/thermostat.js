@@ -33,6 +33,9 @@ Thermostat.prototype.getCurrentPowerMode = function(){
 Thermostat.prototype.togglePowerSave = function() {
   this.isPowerSave = !this.isPowerSave;
   this.maximumTemp = this.isPowerSave ? 25 : 32;
+  if (this.temperature > this.maximumTemp) {
+    this.temperature = this.maximumTemp;
+  }
 };
 
 Thermostat.prototype.reset = function() {
