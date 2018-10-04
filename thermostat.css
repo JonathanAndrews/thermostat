@@ -1,5 +1,5 @@
 .low-usage {
-  color: green;
+  color: blue;
 }
 
 .medium-usage {
@@ -8,4 +8,42 @@
 
 .high-usage {
   color: red;
+}
+
+#temperature, #weather_output {
+  margin-left: calc(40% - 250px);
+  font-size: 19em;
+}
+
+#weather_output {
+  color: grey;
+  /* font-size: 19em */
+}
+
+.btn {
+  margin: 5px 10px;
+  font-size: 30px;
+}
+
+.lrg {
+  width: 250px;
+  height: 75px;
+}
+
+.sml {
+  width: 100px;
+  height: 75px;
+}
+
+#location {
+  height: 75px;
+}
+
+#container {
+  margin:auto;
+}
+
+.weather_current {
+  font-size: 30px;
+  display: block;
 }
