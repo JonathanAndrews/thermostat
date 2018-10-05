@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermostat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="thermostat.css">
+  </head>
+
+  <script src="src/thermostat.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <body>
+      <h1 id="temperature"></h1>
+      <div class="container container--controller">
+        <!-- Current Temperature <span id="current_temp">25</span> -->
+        <button class="sml btn btn-outline-danger" id="temperature-up">+</button>
+        <button class="sml btn btn-outline-primary" id="temperature-down">-</button>
+        <button class="sml btn btn-outline-dark" id="temperature-reset">Reset</button>
+        <!-- power saving mode is <span id="power-saving-status">On</span> -->
+        <button type="button" class="lrg btn-outline-success" data-toggle="button" aria-pressed="false" autocomplete="off" id="powersave" name="powersaving">Power Saving mode</button>
+        <div class="weather_current">
+          <input type="text" id="location" placeholder="London">
+          <button class="lrg btn btn-info" type="button" id="get_weather">Get Weather</button>
+        </div>
+        <h1 id="weather_output"></h1>
+      </div>
+    <script src="interface.js" type="text/javascript">
+
+    </script>
+  </body>
+</html>
